@@ -1,0 +1,98 @@
+#wdm_subme_email_field{
+	padding: 12px;
+    border-color: #AAAAAA;
+    width: 100%;
+}
+
+.wdm-subme-label{
+	padding: 12px;
+    font-size: inherit;
+}
+
+#wdm-subme-form{
+	padding: 1%;
+    border-radius: 5px;
+}
+#wdm-subme-form form{
+    text-align: left;
+}
+
+.wdm-sub-me{
+	padding: 1%;
+    text-align: center;
+}
+.wdm_sub_me_link{
+    background: #961914;
+    color: #fff;
+    text-decoration: none;
+    padding: 12px;
+    border-radius: 4px;
+    -moz-border-radius: 4px;
+    -ms-border-radius: 4px;
+    -o-border-radius: 4px;
+    -webkit-border-radius: 4px;
+    font-size: 15px;
+    font-weight: bold;
+    display: block;
+    max-width: 80%;
+    margin: 0 auto;
+    border: 1px solid #961914;
+}
+.wdm_sub_me_link:hover, .wdm_sub_me_link:active, .wdm_sub_me_link:focus {
+    border: 1px solid #961914;
+    background: #fff;
+    color: #961914;
+    box-shadow: none;
+}
+#wdm_subme_submit{
+	display: inline-block;
+	cursor: pointer;
+    padding: 10px;
+    vertical-align: top;
+    margin-left: 1%;
+}
+#enter-email-label{
+    width: 52%;
+}
+#enter-email-label span{
+    color: red;
+    margin-left: 1%;
+}
+.disabled_button{
+    cursor: not-allowed !important;
+}
+#wdm_agree_span label{
+    display: flex;
+    font-weight: 400;
+}
+#wdm_agree_span input[name='wdm-agree']{
+    margin-right: 5px;
+    margin-top: 2px;
+}
+
+@media only screen and (max-width: 582px) {
+    #wdm_subme_submit,.wdm_agree_para {
+        display: block;
+        margin: auto;
+    }
+    #enter-email-label,.wdm_agree_para{
+        width: 90%;
+        margin-bottom: 10px;
+    }
+    #wdm-subme-form{
+        /*padding: 0px;*/
+    }
+    .wdm_agree_para{
+        margin-bottom: 0px;
+    }
+    #wdm_subme_email_field{
+        /*margin-bottom: 10px;*/
+    }
+    .wdm_enter_email_para{
+        text-align: center;
+    }
+    input[name="wdm-agree"]{
+        width: 20px;
+        height: 20px;   
+    }
+}

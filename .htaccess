@@ -1,0 +1,96 @@
+## EXPIRES CACHING ##
+<IfModule mod_expires.c>
+ExpiresActive On
+ExpiresByType image/jpg "access 1 year"
+ExpiresByType image/jpeg "access 1 year"
+ExpiresByType image/gif "access 1 year"
+ExpiresByType image/png "access 1 year"
+ExpiresByType text/css "access 1 month"
+ExpiresByType text/html "access 1 month"
+ExpiresByType application/pdf "access 1 month"
+ExpiresByType text/x-javascript "access 1 month"
+ExpiresByType application/x-shockwave-flash "access 1 month"
+ExpiresByType image/x-icon "access 1 year"
+ExpiresDefault "access 1 month"
+</IfModule>
+## EXPIRES CACHING ##
+
+# 1 Month for most static assets
+<filesMatch ".(css|jpg|jpeg|png|gif|js|ico)$">
+Header set Cache-Control "max-age=2592000, public"
+</filesMatch>
+
+Header set Connection keep-alive
+
+RewriteEngine On 
+RewriteCond %{HTTPS} off 
+RewriteRule (.*) https://%{HTTP_HOST}%{REQUEST_URI} [L,R=301]
+
+RewriteCond %{HTTP_HOST} ^fireplacecapetown\.co.za
+RewriteRule (.*) https://www.fireplacecapetown.co.za/$1 [R=301,L]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.php\ HTTPS/
+RewriteRule ^index\.php$ https://www.fireplacecapetown.co.za/ [R=301,L]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.html\ HTTPS/
+RewriteRule ^index\.html$ https://www.fireplacecapetown.co.za/ [R=301,L]
+RewriteCond %{THE_REQUEST} ^[A-Z]{3,9}\ /index\.htm\ HTTPS/
+RewriteRule ^index\.htm$ https://www.fireplacecapetown.co.za/ [R=301,L]
+
+# BEGIN WordPress
+# The directives (lines) between `BEGIN WordPress` and `END WordPress` are
+# dynamically generated, and should only be modified via WordPress filters.
+# Any changes to the directives between these markers will be overwritten.
+<IfModule mod_rewrite.c>
+RewriteEngine On
+RewriteBase /
+RewriteRule ^index\.php$ - [L]
+RewriteCond %{REQUEST_FILENAME} !-f
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteRule . /index.php [L]
+</IfModule>
+
+# END WordPress
+
+Redirect permanent /404.php												https://www.fireplacecapetown.co.za/
+Redirect permanent /barbeques.php										https://www.fireplacecapetown.co.za/
+Redirect permanent /barbeques_chad_entertainer.php						https://www.fireplacecapetown.co.za/chad-o-chef/
+Redirect permanent /barbeques_chad_hobgrill.php							https://www.fireplacecapetown.co.za/chad-o-chef/
+Redirect permanent /barbeques_chad_sizzler.php							https://www.fireplacecapetown.co.za/chad-o-chef/
+Redirect permanent /barbeques_jetmaster_dual.php						https://www.fireplacecapetown.co.za/jetmaster/
+Redirect permanent /barbeques_jetmaster_gas.php							https://www.fireplacecapetown.co.za/jetmaster/
+Redirect permanent /ceramic_earthfire.php								https://www.fireplacecapetown.co.za/earthfire/
+Redirect permanent /combustion_stoves.php								https://www.fireplacecapetown.co.za/
+Redirect permanent /combustion_stoves_amesti.php						https://www.fireplacecapetown.co.za/
+Redirect permanent /combustion_stoves_canature.php						https://www.fireplacecapetown.co.za/canature/
+Redirect permanent /combustion_stoves_canature_freestanding.php			https://www.fireplacecapetown.co.za/product-category/fireplaces/canature/free-standing/
+Redirect permanent /combustion_stoves_canatureinsert.php				https://www.fireplacecapetown.co.za/product-category/fireplaces/canature/insert/
+Redirect permanent /combustion_stoves_dru.php							https://www.fireplacecapetown.co.za/dru/
+Redirect permanent /combustion_stoves_franco.php						https://www.fireplacecapetown.co.za/
+Redirect permanent /combustion_stoves_gemini.php						https://www.fireplacecapetown.co.za/
+Redirect permanent /combustion_stoves_godin.php							https://www.fireplacecapetown.co.za/godin/
+Redirect permanent /combustion_stoves_jotul.php							https://www.fireplacecapetown.co.za/jotul/
+Redirect permanent /combustion_stoves_masport.php						https://www.fireplacecapetown.co.za/
+Redirect permanent /combustion_stoves_mbs.php							https://www.fireplacecapetown.co.za/
+Redirect permanent /combustion_stoves_morso.php							https://www.fireplacecapetown.co.za/morso/
+Redirect permanent /combustion_stoves_nordica.php						https://www.fireplacecapetown.co.za/nordica/
+Redirect permanent /combustion_stoves_scan.php							https://www.fireplacecapetown.co.za/scan/
+Redirect permanent /combustion_stoves_sentinel.php						https://www.fireplacecapetown.co.za/sentinel/
+Redirect permanent /contact.php											https://www.fireplacecapetown.co.za/contact-us/
+Redirect permanent /error.php											https://www.fireplacecapetown.co.za/contact-us/
+Redirect permanent /fireplace.php										https://www.fireplacecapetown.co.za/fireplace-advice/
+Redirect permanent /flueless_fireplaces.php								https://www.fireplacecapetown.co.za/fireplace-advice/
+Redirect permanent /flueless_fireplaces_infiniti.php					https://www.fireplacecapetown.co.za/infiniti/
+Redirect permanent /flueless_fireplaces_novent.php						https://www.fireplacecapetown.co.za/fireplace-advice/
+Redirect permanent /gas_fires_infiniti.php								https://www.fireplacecapetown.co.za/infiniti/
+Redirect permanent /gas_fires_jetmaster.php								https://www.fireplacecapetown.co.za/jetmaster/
+Redirect permanent /gas_fires_masport.php								https://www.fireplacecapetown.co.za/
+Redirect permanent /installations.php									https://www.fireplacecapetown.co.za/fireplace-servicing/
+Redirect permanent /pellet_stoves_foveo.php								https://www.fireplacecapetown.co.za/
+Redirect permanent /sitemap.php											https://www.fireplacecapetown.co.za/
+Redirect permanent /thanks.php											https://www.fireplacecapetown.co.za/contact-us/
+Redirect permanent /wanders.php											https://www.fireplacecapetown.co.za/wanders/
+Redirect permanent /wanders_freestanding.php							https://www.fireplacecapetown.co.za/product-category/fireplaces/wanders/wanders-free-standing/
+Redirect permanent /wanders_insert.php									https://www.fireplacecapetown.co.za/product-category/fireplaces/wanders/wanders-insert/
+Redirect permanent /wood_burning.php									https://www.fireplacecapetown.co.za/
+Redirect permanent /wood_burning_homefires.php							https://www.fireplacecapetown.co.za/home-fires/
+Redirect permanent /wood_burning_infiniti.php							https://www.fireplacecapetown.co.za/infiniti/
+Redirect permanent /wood_burning_jetmaster.php							https://www.fireplacecapetown.co.za/jetmaster/

@@ -1,0 +1,37 @@
+
+/** ------------------------------------------------------------------------------------------------
+* ANIMATIONS / #basel-animation
+* ------------------------------------------------------------------------------------------------ */
+
+// ------------------------------------------
+// Loader 
+// ------------------------------------------ 
+
+
+@keyframes load-spin {
+	100%{ transform: rotate(360deg); }
+}
+
+@-o-keyframes load-spin {
+	100%{ -o-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+@-ms-keyframes load-spin {
+	100%{ -ms-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+@-webkit-keyframes load-spin {
+	100%{ -webkit-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+@-moz-keyframes load-spin {
+	100%{ -moz-transform: rotate(360deg); transform: rotate(360deg); }
+}
+
+@keyframes fade-in { from { opacity: 0; } to { opacity: 1;} }
+
+@-webkit-keyframes fade-in { from { opacity: 0; } to { opacity: 1;} }
+
+@-moz-keyframes fade-in { from { opacity: 0; } to { opacity: 1;} }
+
+@-ms-keyframes fade-in { from { opacity: 0; } to { opacity: 1;} }

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<dwsync>
+<file name="class-wp-customize-background-image-control.php" server="41.203.16.5/public_html/" local="131219311500000000" remote="131751822600000000" Dst="0" />
+<file name="class-wp-customize-background-image-setting.php" server="41.203.16.5/public_html/" local="130901772860000000" remote="131751822600000000" Dst="0" />
+<file name="class-wp-customize-background-position-control.php" server="41.203.16.5/public_html/" local="131455825040000000" remote="131751822600000000" Dst="0" />
+<file name="class-wp-customize-code-editor-control.php" server="41.203.16.5/public_html/" local="131529839880000000" remote="131751822600000000" Dst="0" />
+<file name="class-wp-customize-color-control.php" server="41.203.16.5/public_html/" local="131489209660000000" remote="131751822600000000" Dst="0" />
+<file name="class-wp-customize-cropped-image-control.php" server="41.203.16.5/public_html/" local="131455825040000000" remote="131751822600000000" Dst="0" />
+<file name="class-wp-customize-custom-css-setting.php" server="41.203.16.5/public_html/" local="131497493280000000" remote="131751822600000000" Dst="0" />
+<file name="class-wp-customize-date-time-control.php" server="41.203.16.5/public_html/" local="131544665280000000" remote="131751822600000000" Dst="0" />
+<file name="class-wp-customize-filter-setting.php" server="41.203.16.5/public_html/" local="131455825040000000" remote="131751822600000000" Dst="0" />
+<file name="class-wp-customize-header-image-control.php" server="41.203.16.5/public_html/" local="131528486900000000" remote="131751822600000000" Dst="0" />
+<file name="class-wp-customize-header-image-setting.php" server="41.203.16.5/public_html/" local="131251047420000000" remote="131751822600000000" Dst="0" />
+<file name="class-wp-customize-image-control.php" server="41.203.16.5/public_html/" local="131504090860000000" remote="131751822600000000" Dst="0" />
+<file name="class-wp-customize-media-control.php" server="41.203.16.5/public_html/" local="131536019280000000" remote="131751822600000000" Dst="0" />
+<file name="class-wp-customize-nav-menu-auto-add-control.php" server="41.203.16.5/public_html/" local="131516365700000000" remote="131751822600000000" Dst="0" />
+<file name="class-wp-customize-nav-menu-control.php" server="41.203.16.5/public_html/" local="131611755400000000" remote="131751822600000000" Dst="0" />
+<file name="class-wp-customize-nav-menu-item-control.php" server="41.203.16.5/public_html/" local="131455825040000000" remote="131751822600000000" Dst="0" />
+<file name="class-wp-customize-nav-menu-item-setting.php" server="41.203.16.5/public_html/" local="131527690700000000" remote="131751822600000000" Dst="0" />
+<file name="class-wp-customize-nav-menu-location-control.php" server="41.203.16.5/public_html/" local="131528047080000000" remote="131751822600000000" Dst="0" />
+<file name="class-wp-customize-nav-menu-locations-control.php" server="41.203.16.5/public_html/" local="131522171300000000" remote="131751822600000000" Dst="0" />
+<file name="class-wp-customize-nav-menu-name-control.php" server="41.203.16.5/public_html/" local="131516365700000000" remote="131751822600000000" Dst="0" />
+<file name="class-wp-customize-nav-menu-section.php" server="41.203.16.5/public_html/" local="131455825040000000" remote="131751822600000000" Dst="0" />
+<file name="class-wp-customize-nav-menu-setting.php" server="41.203.16.5/public_html/" local="131455825040000000" remote="131751822600000000" Dst="0" />
+<file name="class-wp-customize-nav-menus-panel.php" server="41.203.16.5/public_html/" local="131516365700000000" remote="131751822600000000" Dst="0" />
+<file name="class-wp-customize-new-menu-control.php" server="41.203.16.5/public_html/" local="131536361280000000" remote="131751822600000000" Dst="0" />
+<file name="class-wp-customize-new-menu-section.php" server="41.203.16.5/public_html/" local="131536361280000000" remote="131751822600000000" Dst="0" />
+<file name="class-wp-customize-partial.php" server="41.203.16.5/public_html/" local="131494316220000000" remote="131751822600000000" Dst="0" />
+<file name="class-wp-customize-selective-refresh.php" server="41.203.16.5/public_html/" local="131455825040000000" remote="131751822600000000" Dst="0" />
+<file name="class-wp-customize-sidebar-section.php" server="41.203.16.5/public_html/" local="131455825040000000" remote="131751822600000000" Dst="0" />
+<file name="class-wp-customize-site-icon-control.php" server="41.203.16.5/public_html/" local="131455825040000000" remote="131751822600000000" Dst="0" />
+<file name="class-wp-customize-theme-control.php" server="41.203.16.5/public_html/" local="131698623260000000" remote="131751822600000000" Dst="0" />
+<file name="class-wp-customize-themes-panel.php" server="41.203.16.5/public_html/" local="131518224540000000" remote="131751822600000000" Dst="0" />
+<file name="class-wp-customize-themes-section.php" server="41.203.16.5/public_html/" local="131605110400000000" remote="131751822600000000" Dst="0" />
+<file name="class-wp-customize-upload-control.php" server="41.203.16.5/public_html/" local="130901794460000000" remote="131751822600000000" Dst="0" />
+<file name="class-wp-widget-area-customize-control.php" server="41.203.16.5/public_html/" local="131455825040000000" remote="131751822600000000" Dst="0" />
+<file name="class-wp-widget-form-customize-control.php" server="41.203.16.5/public_html/" local="131455825040000000" remote="131751823200000000" Dst="0" />
+</dwsync>
