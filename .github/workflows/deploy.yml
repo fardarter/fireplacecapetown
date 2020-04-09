@@ -1,14 +1,16 @@
-name: Deploy via git-ftp
 on: push
+name: Publish Website
 jobs:
-  deploy:
-    name: Deploy
+  FTP-Deploy-Action:
+    name: FTP-Deploy-Action
     runs-on: ubuntu-latest
     steps:
-    - uses: actions/checkout@v1
-    - name: git-ftp push
-      uses: sebastianpopp/git-ftp-action@releases/v3
+    - uses: actions/checkout@master
       with:
-        url: "ftp://ftp.fireplacecapetown.co.za/public_html/"
-        user: ${{ secrets.FTP_USER }}
-        password: ${{ secrets.FTP_PWD }}
+        fetch-depth: 2
+    - name: FTP-Deploy-Action
+      uses: SamKirkland/FTP-Deploy-Action@3.0.0
+      with:
+        ftp-server: ftp://ftp.fireplacecapetown.co.za/public_html/
+        ftp-username: ${{ secrets.FTP_USER }}
+        ftp-password: ${{ secrets.FTP_PWD }}
