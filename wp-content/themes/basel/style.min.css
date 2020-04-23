@@ -31945,7 +31945,6 @@ a.t-wa-green {
 @media only screen and (min-width: 1em) {
   #whatsapp-bar .h3 {
     font-size: 1.1rem;
-		background-color: red;
 		margin-bottom: 0px;
 		margin-top: 0px;
   }
@@ -31957,7 +31956,6 @@ a.t-wa-green {
 @media only screen and (min-width: 30em) {
   #whatsapp-bar .h3 {
     font-size: 1.2rem;
-    background-color: blue;
   }
   #covid-bar p {
     font-size: 0.8rem;
@@ -31966,7 +31964,6 @@ a.t-wa-green {
 @media only screen and (min-width: 50em) {
   #whatsapp-bar .h3 {
     font-size: 1.4rem;
-    background-color: yellow;
   }
   #covid-bar p {
     font-size: 0.8rem;
