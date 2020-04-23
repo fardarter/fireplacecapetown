@@ -1,0 +1,44 @@
+version: "3.3"
+
+services:
+  db:
+    image: mysql:5.7
+    volumes:
+      - db_data:/var/lib/mysql
+    restart: unless-stopped
+    environment:
+      MYSQL_ROOT_PASSWORD: somewordpress
+      MYSQL_DATABASE: wordpress
+      MYSQL_USER: wordpress
+      MYSQL_PASSWORD: wordpress
+
+  phpmyadmin:
+    depends_on:
+      - db
+    image: phpmyadmin/phpmyadmin
+    restart: unless-stopped
+    ports:
+      - "8080:80"
+    environment:
+      PMA_HOST: db
+      MYSQL_ROOT_PASSWORD: somewordpress
+
+  nginx:
+    image: nginx-fpct:latest
+    container_name: nginx-fpct-container
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./:/var/www/app
+    restart: unless-stopped
+    environment:
+      WORDPRESS_DB_HOST: db:3306
+      WORDPRESS_DB_USER: testuser
+      WORDPRESS_DB_PASSWORD: testuserpass
+      WORDPRESS_DB_NAME: fireplb_db1
+
+volumes:
+  db_data: {}
+# RE mysql connection errors: https://stackoverflow.com/questions/42273823/docker-compose-wordpress-mysql-cant-connect
+

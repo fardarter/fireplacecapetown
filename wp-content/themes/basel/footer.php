@@ -14,7 +14,10 @@
 			</div>
 		</div>
 	<?php endif ?>
-
+	
+	<?php
+		require 'templates/components/whatsapp-banner.php'; 
+	?>
 	<!-- FOOTER -->
 	<footer class="footer-container color-scheme-<?php echo esc_attr( basel_get_opt( 'footer-style' ) ); ?>">
 		

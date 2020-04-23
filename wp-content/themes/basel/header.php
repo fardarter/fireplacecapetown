@@ -20,7 +20,6 @@
 	<link rel="profile" href="http://gmpg.org/xfn/11">
 	<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
 	<?php wp_head(); ?>
-	<script type="text/javascript" src="https://cdn.jsdelivr.net/gh/primediabroadcasting/za-covid19-js/covidbar-latest.min.js?theme=grey"></script>
 </head>
 
 <body <?php body_class(); ?>>
