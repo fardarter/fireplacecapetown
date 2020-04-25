@@ -1,13 +1,28 @@
 @charset "UTF-8";
 
+
 a, abbr, acronym, address, applet, article, aside, audio, b, big, blockquote, body, canvas, caption, center, cite, code, dd, del, details, dfn, div, dl, dt, em, embed, fieldset, figcaption, figure, footer, form, h1, h2, h3, h4, h5, h6, header, hgroup, html, i, iframe, img, ins, kbd, label, legend, li, mark, menu, nav, object, ol, output, p, pre, q, ruby, s, samp, section, small, span, strike, strong, sub, summary, sup, table, tbody, td, tfoot, th, thead, time, tr, tt, u, ul, var, video {
 	margin: 0;
 	padding: 0;
 	border: 0;
 	font: inherit;
-	font-size: 100%;
 	vertical-align: baseline
 }
+
+html {
+  font-size: 13px;
+}
+@media (min-width: 320px) and (max-width: 1400px) {
+  html {
+    font-size: calc(13px + (18 - 13) * ((100vw - 320px) / (1400 - 320)));
+  }
+}
+@media (min-width: 1400px) {
+  html {
+    font-size: 18px;
+  }
+}
+
 .footer-column-4 {
 	width: 33.3% !important;
 }
